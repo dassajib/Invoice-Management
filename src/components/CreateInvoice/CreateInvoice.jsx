@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const CreateInvoice = () => {
-  return (
-    <div className='w-[calc(100%-256px)]'>CreateInvoice</div>
-  )
-}
+  return <div className="p-6 w-[calc(100%-256px)] ml-64">CreateInvoice</div>;
+};
 
-export default CreateInvoice
+export default CreateInvoice;
