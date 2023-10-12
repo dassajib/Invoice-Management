@@ -12,13 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50">
+    <div className="w-full lg:w-[calc(100%-256px)] lg:ml-64 bg-gray-50">
       <div className="flex justify-between py-4 px-2 shadow-md shadow-black/10">
         <div className="flex gap-2">
-          <span className="hidden md:block font-medium">Dashboard</span>
+          <span className="hidden lg:block font-medium">Dashboard</span>
 
           {/* hamburger button for mobile */}
-          <div className="cursor-pointer md:hidden ml-2 mt-1">
+          <div className="cursor-pointer lg:hidden ml-2 mt-1">
             <button
               onClick={handleClick}
               className="rounded-md text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -38,7 +38,7 @@ const Navbar = () => {
 
       {/* mobile navigation menu */}
       {open ? (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {SIDEBAR_NAVIGATION_ELEMENETS.map((item) => (
               <Link

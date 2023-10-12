@@ -4,7 +4,7 @@ import { DASHBOARD_CARD_DATA } from "../../data/const";
 
 const Dashboard = () => {
   return (
-    <div className="p-6 w-full md:w-[calc(100%-256px)] md:ml-64">
+    <div className="p-6 w-full lg:w-[calc(100%-256px)] lg:ml-64">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         {DASHBOARD_CARD_DATA.map((item) => (
           <div key={item.id}>
