@@ -27,7 +27,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="pr-2">
           <img
             src={dp}
             className="w-8 h-8 rounded object-cover align-middle cursor-pointer"
@@ -35,7 +35,7 @@ const Navbar = () => {
           />
         </div>
       </div>
-      
+
       {/* mobile navigation menu */}
       {open ? (
         <div className="md:hidden">
