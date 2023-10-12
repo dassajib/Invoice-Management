@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="fixed w-64 top-0 left-0 h-full bg-gray-900 p-4">
+    <div className="hidden md:block fixed w-64 top-0 left-0 h-full bg-gray-900 p-4">
       <div className="flex items-center gap-8 border-b border-gray-800 pb-4">
         <Link to="/">
           <GiFireDash size={24} className="text-gray-300 cursor-pointer" />
