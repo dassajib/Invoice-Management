@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import dp from "../../assets/dp.jpg";
+import logo from "../../assets/logo.jpg";
 import { SIDEBAR_NAVIGATION_ELEMENETS } from "../../data/const";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <div className="pr-2">
           <img
-            src={dp}
+            src={logo}
             className="w-8 h-8 rounded object-cover align-middle cursor-pointer"
             alt="user picture"
           />
