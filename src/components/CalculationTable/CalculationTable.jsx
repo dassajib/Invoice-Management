@@ -53,7 +53,7 @@ const CalculationTable = () => {
 
   return (
     <div>
-      <table class="table-auto mt-4 w-full">
+      <table className="table-auto mt-4 w-full">
         <thead>
           <tr>
             <th>Product Name</th>
@@ -108,9 +108,7 @@ const CalculationTable = () => {
                 />
               </td>
               <td style={{ borderStyle: "hidden" }}>{product.total}</td>
-              <td
-                style={{ borderStyle: "hidden", padding: 4 }}
-              >
+              <td style={{ borderStyle: "hidden", padding: 4 }}>
                 {index === products.length - 1 && (
                   <button
                     type="button"
@@ -139,48 +137,48 @@ const CalculationTable = () => {
         </tbody>
       </table>
 
-      <div class="grid gap-4">
-        <div class="grid grid-cols-3 gap-4">
+      <div className="grid gap-4 mt-5 mb-20">
+        <div className="grid grid-cols-3">
           <div></div>
           <div></div>
           <div>
             <form>
-              <label column sm={6}>
-                Sub Total :
-              </label>
-              <input
-                className="border-0"
-                type="number"
-                readOnly
-                value={calculateSubTotal()}
-              />
-              <label column sm={6}>
-                VAT/Tax (%) :
-              </label>
-              <input
-                className="border-0"
-                type="number"
-                value={vatTax}
-                onChange={(e) => setVatTax(parseFloat(e.target.value))}
-              />
-              <label column sm={6}>
-                Discount :
-              </label>
-              <input
-                className="border-0"
-                type="number"
-                value={discount}
-                onChange={(e) => setDiscount(parseFloat(e.target.value))}
-              />
-              <label column sm={6}>
-                Final Total :
-              </label>
-              <input
-                className="border-0"
-                type="number"
-                readOnly
-                value={calculateFinalTotal()}
-              />
+              <div className="flex justify-between">
+                <label>Sub Total :</label>
+                <input
+                  className="border-0 w-36"
+                  type="number"
+                  readOnly
+                  value={calculateSubTotal()}
+                />
+              </div>
+              <div className="flex justify-between">
+                <label>VAT/Tax (%) :</label>
+                <input
+                  className="border-0 w-36"
+                  type="number"
+                  value={vatTax}
+                  onChange={(e) => setVatTax(parseFloat(e.target.value))}
+                />
+              </div>
+              <div className="flex justify-between">
+                <label>Discount :</label>
+                <input
+                  className="border-0 w-36"
+                  type="number"
+                  value={discount}
+                  onChange={(e) => setDiscount(parseFloat(e.target.value))}
+                />
+              </div>
+              <div className="flex justify-between">
+                <label>Final Total :</label>
+                <input
+                  className="border-0 w-36"
+                  type="number"
+                  readOnly
+                  value={calculateFinalTotal()}
+                />
+              </div>
             </form>
           </div>
         </div>
