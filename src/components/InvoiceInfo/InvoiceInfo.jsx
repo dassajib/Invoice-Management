@@ -1,11 +1,22 @@
 import React from "react";
 
-const InvoiceInfo = () => {
+// set state's props received
+const InvoiceInfo = ({ setCustomerName, setInvoiceForm }) => {
+  // function's for grab input's value
+  const handleName = (e) => {
+    setCustomerName(e.target.value);
+  };
+
+  const handleInvoiceForm = (e) => {
+    setInvoiceForm(e.target.value);
+  };
+
   return (
     <div className="flex justify-between mt-5">
       <div>
         <h4>Invoice To</h4>
         <input
+          onChange={handleName}
           type="text"
           placeholder="Enter Customer's Name"
           id="default-input"
@@ -27,6 +38,7 @@ const InvoiceInfo = () => {
       <div>
         <h4>Invoice From</h4>
         <input
+          onChange={handleInvoiceForm}
           type="text"
           placeholder="Enter Invoice No"
           id="default-input"

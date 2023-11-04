@@ -53,14 +53,14 @@ const CalculationTable = () => {
 
   return (
     <div>
-      <table className="table-auto mt-4 w-full">
+      <table id="calculation-table" className="table-auto mt-4 w-full">
         <thead>
           <tr>
             <th>Product Name</th>
             <th>Quantity</th>
             <th>Unit Price</th>
             <th>Total</th>
-            <th>Action</th>
+            <th className="hide-section">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -108,7 +108,7 @@ const CalculationTable = () => {
                 />
               </td>
               <td style={{ borderStyle: "hidden" }}>{product.total}</td>
-              <td style={{ borderStyle: "hidden", padding: 4 }}>
+              <td  className="hide-section" style={{ borderStyle: "hidden", padding: 4 }}>
                 {index === products.length - 1 && (
                   <button
                     type="button"
