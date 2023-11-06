@@ -15,12 +15,6 @@ export const SIDEBAR_NAVIGATION_ELEMENETS = [
     path: "/create-invoice",
     icon: <TbFileInvoice />,
   },
-  {
-    name: "signin",
-    label: "Sign In",
-    path: "/sign-in",
-    icon: <LiaSignInAltSolid />,
-  },
 ];
 
 export const DASHBOARD_CARD_DATA = [
