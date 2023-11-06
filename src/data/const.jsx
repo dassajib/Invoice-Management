@@ -1,18 +1,17 @@
 import { AiOutlineDashboard } from "react-icons/ai";
 import { TbFileInvoice } from "react-icons/tb";
-import { LiaSignInAltSolid } from "react-icons/lia";
 
 export const SIDEBAR_NAVIGATION_ELEMENETS = [
   {
     name: "dashboard",
     label: "Dashboard",
-    path: "/",
+    path: "/dashboard",
     icon: <AiOutlineDashboard />,
   },
   {
     name: "create-invoice",
     label: "Create Invoice",
-    path: "/create-invoice",
+    path: "/dashboard/create-invoice",
     icon: <TbFileInvoice />,
   },
 ];

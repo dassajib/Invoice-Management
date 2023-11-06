@@ -7,10 +7,10 @@ const Sidebar = () => {
   return (
     <div className="hidden lg:block fixed w-64 top-0 left-0 h-full bg-gray-900 p-4">
       <div className="flex items-center gap-8 border-b border-gray-800 pb-4">
-        <Link to="/">
+        <Link to="/home">
           <GiFireDash size={24} className="text-gray-300 cursor-pointer" />
         </Link>
-        <Link to="/">
+        <Link to="/home">
           <span className="text-gray-300 tracking-[4px] text-lg font-bold cursor-pointer">
             INVOICE
           </span>
