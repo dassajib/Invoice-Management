@@ -2,11 +2,13 @@ import axios from "axios";
 import { useState } from "react";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const REGISTER_URL = "http://127.0.0.1:8000/user/registration/";
 
 const Register = () => {
+  const navigate = useNavigate()
+
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -42,6 +44,7 @@ const Register = () => {
         setLastName("");
         setPassword("");
         setConfirmPassword("");
+        navigate("/")
       } catch (error) {
         if (!error?.response) {
           setError("No Server Response");

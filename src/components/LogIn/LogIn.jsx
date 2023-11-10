@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { useContext, useState } from "react";
@@ -6,8 +6,9 @@ import axios from "axios";
 import AuthContext from "../../context/AuthProvider";
 
 const LOGIN_URL = "http://127.0.0.1:8000/user/login/";
-
 const LogIn = () => {
+  const navigate = useNavigate("");
+
   const { setAuth } = useContext(AuthContext);
 
   const [user, setUser] = useState("");
@@ -33,6 +34,7 @@ const LogIn = () => {
       setUser("");
       setPassword("");
       setSuccess(true);
+      navigate("/dashboard");
     } catch (error) {
       if (!error.response) {
         setError("No Server Found");
