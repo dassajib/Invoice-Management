@@ -5,7 +5,7 @@ import { AiOutlineUnlock } from "react-icons/ai";
 const LogIn = () => {
   return (
     <div
-      className="h-[100vh] flex justify-center items-center bg-cover"
+      className="h-[100vh] text-white flex justify-center items-center bg-cover"
       style={{ backgroundImage: "url('../src/assets/bg.jpg')" }}
     >
       <div className=" bg-slate-800 border border-slate-600 rounded-md shadow-lg p-8 backdrop-filter backdrop-blur-lg bg-opacity-30 relative transition-all duration-200">
@@ -58,8 +58,8 @@ const LogIn = () => {
           </button>
           <div>
             <span className="m-4">
-              New Here?{" "}
-              <Link className="text-blue-500">
+              New Here?
+              <Link to="/registration" className="text-blue-500">
                 Create an Account
               </Link>
             </span>
