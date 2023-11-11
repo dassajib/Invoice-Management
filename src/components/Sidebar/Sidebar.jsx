@@ -10,7 +10,7 @@ const Sidebar = () => {
         <Link to="/home">
           <GiFireDash size={24} className="text-gray-300 cursor-pointer" />
         </Link>
-        <Link to="/home">
+        <Link to="/dashboard">
           <span className="text-gray-300 tracking-[4px] text-lg font-bold cursor-pointer">
             INVOICE
           </span>

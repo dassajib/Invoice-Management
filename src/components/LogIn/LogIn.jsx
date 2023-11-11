@@ -1,19 +1,18 @@
 import { Link, useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { AiOutlineUnlock } from "react-icons/ai";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
-import AuthContext from "../../context/AuthProvider";
+import { useAuth } from "../../context/AuthProvider";
 
 const LOGIN_URL = "http://127.0.0.1:8000/user/login/";
 const LogIn = () => {
   const navigate = useNavigate("");
 
-  const { setAuth } = useContext(AuthContext);
+  const { setAuth } = useAuth();
 
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
-  const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
@@ -28,12 +27,13 @@ const LogIn = () => {
         //   withCredentials: true,
         // }
       );
-      console.log(JSON.stringify(response?.data));
-      const accessToken = response?.data?.accessToken;
+      console.log(JSON.stringify(response?.data?.access));
+      const accessToken = response?.data?.access;
+      // save data to localstorage
+      localStorage.setItem('user', JSON.stringify({ user, password, accessToken }));
       setAuth({ user, password, accessToken });
       setUser("");
       setPassword("");
-      setSuccess(true);
       navigate("/dashboard");
     } catch (error) {
       if (!error.response) {
