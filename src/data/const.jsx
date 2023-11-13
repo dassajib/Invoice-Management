@@ -14,6 +14,30 @@ export const SIDEBAR_NAVIGATION_ELEMENETS = [
     path: "/dashboard/create-invoice",
     icon: <TbFileInvoice />,
   },
+  {
+    name: "company",
+    label: "Company",
+    path: "/dashboard/company",
+    icon: <TbFileInvoice />,
+  },
+  {
+    name: "uom",
+    label: "UOM",
+    path: "/dashboard/uom",
+    icon: <TbFileInvoice />,
+  },
+  {
+    name: "item",
+    label: "Item",
+    path: "/dashboard/item",
+    icon: <TbFileInvoice />,
+  },
+  {
+    name: "invoice",
+    label: "Invoice",
+    path: "/dashboard/invoice",
+    icon: <TbFileInvoice />,
+  },
 ];
 
 export const DASHBOARD_CARD_DATA = [

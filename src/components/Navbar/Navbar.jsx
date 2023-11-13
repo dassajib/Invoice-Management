@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className="w-full lg:w-[calc(100%-256px)] lg:ml-64 bg-gray-50">
       <div className="flex justify-between py-4 px-2 shadow-md shadow-black/10">
         <div className="flex gap-2">
-          <span className="hidden lg:block font-medium">Dashboard</span>
+          {/* <span className="hidden lg:block font-medium">Dashboard</span> */}
 
           {/* hamburger button for mobile */}
           <div className="cursor-pointer lg:hidden ml-2 mt-1">
