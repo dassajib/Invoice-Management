@@ -1,5 +1,8 @@
 import { AiOutlineDashboard } from "react-icons/ai";
 import { TbFileInvoice } from "react-icons/tb";
+import { LiaSitemapSolid } from "react-icons/lia";
+import { AiOutlineDeploymentUnit } from "react-icons/ai";
+import { FcOrganization } from "react-icons/fc";
 
 export const SIDEBAR_NAVIGATION_ELEMENETS = [
   {
@@ -18,19 +21,19 @@ export const SIDEBAR_NAVIGATION_ELEMENETS = [
     name: "company",
     label: "Company",
     path: "/dashboard/company",
-    icon: <TbFileInvoice />,
+    icon: <FcOrganization />,
   },
   {
     name: "uom",
     label: "UOM",
     path: "/dashboard/uom",
-    icon: <TbFileInvoice />,
+    icon: <AiOutlineDeploymentUnit />,
   },
   {
     name: "item",
     label: "Item",
     path: "/dashboard/item",
-    icon: <TbFileInvoice />,
+    icon: <LiaSitemapSolid />,
   },
   {
     name: "invoice",

@@ -67,6 +67,7 @@ const LogIn = () => {
               onChange={(e) => setUser(e.target.value)}
               value={user}
               autoComplete="off"
+              placeholder=""
               required
             />
             <label
@@ -84,6 +85,7 @@ const LogIn = () => {
               className="block w-72 py-2.5 px-0 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:text-white focus:border-blue-600 peer"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
+              placeholder=""
               required
             />
             <label
